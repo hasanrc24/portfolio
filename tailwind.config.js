@@ -7,6 +7,7 @@ module.exports = {
         "nav-color": "#111418",
         "img-border": "#343a40",
         "brand-color": "#20c997",
+        "about-bg": "#212529",
       },
       backgroundImage: {
         "bg-image":

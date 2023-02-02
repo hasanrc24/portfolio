@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="bg-bg-image bg-cover bg-no-repeat bg-fixed bg-white/70 h-full text-white"
+      className="bg-bg-image bg-cover bg-no-repeat bg-fixed bg-white/70 h-screen text-white"
     >
       <div className="flex flex-col justify-center items-center h-full">
         <h4 className=" text-3xl font-medium">Welcome</h4>

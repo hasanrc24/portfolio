@@ -16,7 +16,7 @@ const Nav = () => {
           Home
         </a>
         <a
-          href="/"
+          href="#about"
           className="hover:text-brand-color transition duration-250 ease-linear"
         >
           About Me
