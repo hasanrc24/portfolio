@@ -29,7 +29,47 @@ const About = () => {
               standard dummy text ever when an unknown printer took a galley.
             </p>
           </div>
-          <div>2</div>
+          <div className="pl-4">
+            <p className="">
+              <span className="font-medium pr-2">Name:</span>Md. Hasanuzzaman
+            </p>
+            <hr className="border-[#393b3b] my-3" />
+            <p>
+              <span className="font-medium pr-2">Email:</span>
+              <span className="text-brand-color">hasanrc24@gmail.com</span>
+            </p>
+            <hr className="border-[#393b3b] my-3" />
+            <p className="">
+              <span className="font-medium pr-2">Age:</span>
+              26
+            </p>
+            <hr className="border-[#393b3b] my-3" />
+            <p className="">
+              <span className="font-medium pr-2">From:</span>
+              Rajshahi, Bangladesh
+            </p>
+            <button className="bg-brand-color my-6 px-6 py-3 rounded-full">
+              Download CV
+            </button>
+          </div>
+        </div>
+        <div className="grid grid-cols-4 pt-6 pb-14">
+          <div className="border-dotted border-r border-[#4f5252]">
+            <h2 className=" text-6xl text-[#909294] mb-2">1+</h2>
+            <p className="text-[#ccd0d3]">Years Experience</p>
+          </div>
+          <div className="border-dotted border-r border-[#4f5252]">
+            <h2 className=" text-6xl text-[#909294] mb-2">5+</h2>
+            <p className="text-[#ccd0d3]">Happy Clients</p>
+          </div>
+          <div className="border-dotted border-r border-[#4f5252]">
+            <h2 className=" text-6xl text-[#909294] mb-2">25+</h2>
+            <p className="text-[#ccd0d3]">Projects Done</p>
+          </div>
+          <div className="">
+            <h2 className=" text-6xl text-[#909294] mb-2">0</h2>
+            <p className="text-[#ccd0d3]">Awards</p>
+          </div>
         </div>
       </div>
     </div>
