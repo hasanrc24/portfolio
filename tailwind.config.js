@@ -8,6 +8,8 @@ module.exports = {
         "img-border": "#343a40",
         "brand-color": "#20c997",
         "about-bg": "#212529",
+        "services-bg": "#343a40",
+        "text-color": "#6d7072",
       },
       backgroundImage: {
         "bg-image":

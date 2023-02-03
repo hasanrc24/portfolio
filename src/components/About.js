@@ -1,15 +1,10 @@
 import React from "react";
+import Heading from "./miniComp/Heading";
 
 const About = () => {
   return (
     <div id="about" className="bg-about-bg relative px-12">
-      <h1 className="text-[8rem] font-extrabold text-[#282d31] py-6 ">
-        ABOUT ME
-      </h1>
-      <div className="absolute self-center top-24 font-semibold text-3xl left-0 right-0">
-        <h4>Know Me More</h4>
-        <span className="w-20 mx-auto border-brand-color mt-2 border-b-4 block"></span>
-      </div>
+      <Heading back="ABOUT ME" front="Know Me More" />
       <div>
         <div className="grid grid-cols-3 text-left">
           <div className="col-span-2">

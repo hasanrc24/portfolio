@@ -2,6 +2,7 @@ import React from "react";
 import About from "../components/About";
 import Hero from "../components/Hero";
 import Nav from "../components/Nav";
+import Services from "../components/Services";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <div className="col-span-4 text-white text-center">
         <Hero />
         <About />
+        <Services />
       </div>
     </div>
   );

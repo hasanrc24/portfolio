@@ -22,7 +22,7 @@ const Nav = () => {
           About Me
         </a>
         <a
-          href="/"
+          href="#services"
           className="hover:text-brand-color transition duration-250 ease-linear"
         >
           What I Do
