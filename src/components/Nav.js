@@ -28,7 +28,7 @@ const Nav = () => {
           What I Do
         </a>
         <a
-          href="/"
+          href="#resume"
           className="hover:text-brand-color transition duration-250 ease-linear"
         >
           Resume

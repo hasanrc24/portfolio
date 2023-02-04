@@ -2,6 +2,8 @@ import React from "react";
 import About from "../components/About";
 import Hero from "../components/Hero";
 import Nav from "../components/Nav";
+import Portfolio from "../components/Portfolio";
+import Resume from "../components/Resume";
 import Services from "../components/Services";
 
 const Home = () => {
@@ -14,6 +16,8 @@ const Home = () => {
         <Hero />
         <About />
         <Services />
+        <Resume />
+        <Portfolio />
       </div>
     </div>
   );
