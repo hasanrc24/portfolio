@@ -10,6 +10,9 @@ module.exports = {
         "about-bg": "#212529",
         "services-bg": "#343a40",
         "text-color": "#6d7072",
+        "modal-color": "#343a40",
+        "modal-out-bg": "#212529",
+        "modal-text": "#dee3e4",
       },
       backgroundImage: {
         "bg-image":
