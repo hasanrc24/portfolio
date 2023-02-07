@@ -1,8 +1,11 @@
 import Isotope from "isotope-layout";
 import React, { useEffect, useRef, useState } from "react";
-import Modal from "./Modal";
+import { useDispatch } from "react-redux";
+import { modalInfo } from "../../redux/modalSlice";
+import { workData } from "../../data";
 
 const IsotopeReact = ({ setOpenModal }) => {
+  const dispatch = useDispatch();
   // init one ref to store the future isotope object
   const isotope = useRef();
   // store the filter keyword in a state
@@ -54,7 +57,10 @@ const IsotopeReact = ({ setOpenModal }) => {
       </div>
       <div className="filter-container m-auto">
         <div
-          onClick={() => setOpenModal(true)}
+          onClick={() => {
+            setOpenModal(true);
+            dispatch(modalInfo(workData[0]));
+          }}
           className="filter-item m-4 next type"
         >
           <div className="cursor-pointer group rounded-lg relative max-h-48 w-72 overflow-hidden">
@@ -70,7 +76,10 @@ const IsotopeReact = ({ setOpenModal }) => {
           </div>
         </div>
         <div
-          onClick={() => setOpenModal(true)}
+          onClick={() => {
+            setOpenModal(true);
+            dispatch(modalInfo(workData[1]));
+          }}
           className="filter-item m-4 react"
         >
           <div className="cursor-pointer group rounded-lg max-h-48 w-72 overflow-hidden">
@@ -86,7 +95,10 @@ const IsotopeReact = ({ setOpenModal }) => {
           </div>
         </div>
         <div
-          onClick={() => setOpenModal(true)}
+          onClick={() => {
+            setOpenModal(true);
+            dispatch(modalInfo(workData[2]));
+          }}
           className="filter-item m-4 react"
         >
           <div className="cursor-pointer group rounded-lg max-h-48 w-72 overflow-hidden">
@@ -103,7 +115,10 @@ const IsotopeReact = ({ setOpenModal }) => {
         </div>
 
         <div
-          onClick={() => setOpenModal(true)}
+          onClick={() => {
+            setOpenModal(true);
+            dispatch(modalInfo(workData[3]));
+          }}
           className="filter-item m-4 react"
         >
           <div className="cursor-pointer group rounded-lg max-h-48 w-72 overflow-hidden">

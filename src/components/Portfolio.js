@@ -8,7 +8,13 @@ const Portfolio = () => {
   return (
     <div className="px-12 relative bg-services-bg">
       <Heading back="PORTFOLIO" front="My Work" />
-      {openModal && <Modal setOpenModal={setOpenModal} />}
+      {openModal && (
+        <Modal
+          closeTimeoutMS={500}
+          setOpenModal={setOpenModal}
+          openModal={openModal}
+        />
+      )}
       <IsotopeReact setOpenModal={setOpenModal} />
     </div>
   );

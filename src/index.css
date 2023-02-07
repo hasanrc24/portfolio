@@ -2,3 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+@layer base {
+    .ReactModal__Overlay {
+        opacity: 0;
+        transition: opacity 2000ms ease-in-out;
+    }
+    
+    .ReactModal__Overlay--after-open{
+        opacity: 1;
+    }
+    
+    .ReactModal__Overlay--before-close{
+        opacity: 0;
+    }
+}
