@@ -3,17 +3,25 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
-@layer base {
-    .ReactModal__Overlay {
-        opacity: 0;
-        transition: opacity 2000ms ease-in-out;
+/* @layer base {
+    .class-dots{
+        @apply mt-3 static
     }
-    
-    .ReactModal__Overlay--after-open{
-        opacity: 1;
-    }
-    
-    .ReactModal__Overlay--before-close{
-        opacity: 0;
-    }
+} */
+
+.slick-dots{
+    margin-top: 10px !important;
+}
+
+.slick-dots li button:before{
+    /* color: #242A65 !important; */
+    font-size: 12px !important;
+    width: 90%;
+}
+.slick-dots li.slick-active button:before{
+    color: #20c997 !important;
+    border: 1px solid #20c997;
+    border-radius: 30px;
+    display: flex;
+    padding: 0 2px;
 }

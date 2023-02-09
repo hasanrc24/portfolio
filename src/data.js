@@ -57,3 +57,27 @@ export const workData = [
     url: "https://doctors-portal-36927.firebaseapp.com/",
   },
 ];
+
+export const testimonialData = [
+  {
+    name: "Patrick Cary",
+    about: "Freelancer from USA",
+    review:
+      "“I am happy Working with printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam persequeris essent possim iriure.”",
+    stars: 5,
+  },
+  {
+    name: "Chris Tom",
+    about: "User from USA",
+    review:
+      "“I am happy Working with printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam persequeris essent possim iriure.”",
+    stars: 5,
+  },
+  {
+    name: "Denis Jacques",
+    about: "User from USA",
+    review:
+      "“I am happy Working with printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam persequeris essent possim iriure.”",
+    stars: 5,
+  },
+];

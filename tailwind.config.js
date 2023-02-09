@@ -21,7 +21,11 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      boxShadow: {
+        "input-shadow": "0 0 5px rgb(128, 189, 255, 50%)",
+      },
     },
   },
   plugins: [],
+  important: true,
 };

@@ -34,19 +34,19 @@ const Nav = () => {
           Resume
         </a>
         <a
-          href="/"
+          href="#portfolio"
           className="hover:text-brand-color transition duration-250 ease-linear"
         >
           Portfolio
         </a>
         <a
-          href="/"
+          href="#testimonial"
           className="hover:text-brand-color transition duration-250 ease-linear"
         >
           Testimonial
         </a>
         <a
-          href="/"
+          href="#contact"
           className="hover:text-brand-color transition duration-250 ease-linear"
         >
           Contact
