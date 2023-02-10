@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Nav = () => {
   return (
-    <div className="bg-nav-color text-white flex justify-center items-center flex-col h-screen">
+    <nav className="bg-nav-color overflow-hidden overflow-y-auto z-10 text-white flex justify-center items-center flex-col h-full py-10">
       <div className="h-44 w-44 rounded-full overflow-hidden border-8 border-img-border">
         <img src="/images/profile.jpg" alt="avatar" />
       </div>
@@ -78,7 +78,7 @@ const Nav = () => {
           <FaGithub />
         </a>
       </div>
-    </div>
+    </nav>
   );
 };
 

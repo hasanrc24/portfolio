@@ -55,15 +55,15 @@ const IsotopeReact = ({ setOpenModal }) => {
           TypeScript
         </span>
       </div>
-      <div className="filter-container m-auto">
+      <div className="grid grid-cols-3 gap-4 filter-container ">
         <div
           onClick={() => {
             setOpenModal(true);
             dispatch(modalInfo(workData[0]));
           }}
-          className="filter-item m-4 next type"
+          className="filter-item next type"
         >
-          <div className="cursor-pointer group rounded-lg relative max-h-48 w-72 overflow-hidden">
+          <div className="cursor-pointer group rounded-lg relative max-h-48 overflow-hidden">
             <img
               className=" duration-1000"
               src="/images/portfolio/next-blog-pic.png"
@@ -80,9 +80,9 @@ const IsotopeReact = ({ setOpenModal }) => {
             setOpenModal(true);
             dispatch(modalInfo(workData[1]));
           }}
-          className="filter-item m-4 react"
+          className="filter-item react"
         >
-          <div className="cursor-pointer group rounded-lg max-h-48 w-72 overflow-hidden">
+          <div className="cursor-pointer group rounded-lg max-h-48 overflow-hidden">
             <img
               className=" group-hover:-translate-y-44 transition-all duration-1000"
               src="/images/portfolio/e-com-pic.png"
@@ -99,9 +99,9 @@ const IsotopeReact = ({ setOpenModal }) => {
             setOpenModal(true);
             dispatch(modalInfo(workData[2]));
           }}
-          className="filter-item m-4 react"
+          className="filter-item react"
         >
-          <div className="cursor-pointer group rounded-lg max-h-48 w-72 overflow-hidden">
+          <div className="cursor-pointer group rounded-lg max-h-48 overflow-hidden">
             <img
               className="group-hover:-translate-y-72 transition-all duration-1000"
               src="/images/portfolio/creative-agency-pic.png"
@@ -113,15 +113,14 @@ const IsotopeReact = ({ setOpenModal }) => {
             </div>
           </div>
         </div>
-
         <div
           onClick={() => {
             setOpenModal(true);
             dispatch(modalInfo(workData[3]));
           }}
-          className="filter-item m-4 react"
+          className="filter-item react"
         >
-          <div className="cursor-pointer group rounded-lg max-h-48 w-72 overflow-hidden">
+          <div className="cursor-pointer group rounded-lg max-h-48 overflow-hidden">
             <img
               className="group-hover:-translate-y-72 transition-all duration-1000"
               src="/images/portfolio/doctors-portal-pic.png"
@@ -137,5 +136,56 @@ const IsotopeReact = ({ setOpenModal }) => {
     </>
   );
 };
+
+// const IsotopeReact = () => {
+//   // init one ref to store the future isotope object
+//   const isotope = React.useRef();
+//   // store the filter keyword in a state
+//   const [filterKey, setFilterKey] = React.useState("*");
+
+//   // initialize an Isotope object with configs
+//   React.useEffect(() => {
+//     isotope.current = new Isotope(".filter-container", {
+//       itemSelector: ".filter-item",
+//       layoutMode: "fitRows",
+//     });
+//     // cleanup
+//     return () => isotope.current.destroy();
+//   }, []);
+
+//   // handling filter key change
+//   React.useEffect(() => {
+//     filterKey === "*"
+//       ? isotope.current.arrange({ filter: `*` })
+//       : isotope.current.arrange({ filter: `.${filterKey}` });
+//   }, [filterKey]);
+
+//   const handleFilterKeyChange = (key) => () => setFilterKey(key);
+
+//   return (
+//     <div>
+//       <ul>
+//         <li onClick={handleFilterKeyChange("*")}>Show Both</li>
+//         <li onClick={handleFilterKeyChange("vege")}>Show Veges</li>
+//         <li onClick={handleFilterKeyChange("fruit")}>Show Fruits</li>
+//       </ul>
+//       <hr />
+//       <div className="grid grid-cols-3 gap-4 filter-container">
+//         <div className="filter-item vege">
+//           <span>Cucumber</span>
+//         </div>
+//         <div className="filter-item fruit">
+//           <span>Apple</span>
+//         </div>
+//         <div className="filter-item fruit">
+//           <span>Orange</span>
+//         </div>
+//         <div className="filter-item fruit vege">
+//           <span>Tomato</span>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 export default IsotopeReact;
