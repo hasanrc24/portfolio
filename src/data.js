@@ -43,9 +43,9 @@ export const workData = [
     projectInfo:
       "This is a simple NextJS project developed for an Architecture firm.",
     technology: "NextJS, Tailwind CSS",
-    image: "/images/portfolio/doctors-portal-pic.png",
+    image: "/images/portfolio/twee-sketch-pic.png",
     category: "Agency Website",
-    url: "https://doctors-portal-36927.firebaseapp.com/",
+    url: "https://twee-sketch.vercel.app/",
   },
   {
     title: "Snake Game",

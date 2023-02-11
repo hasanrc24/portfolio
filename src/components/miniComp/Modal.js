@@ -35,7 +35,7 @@ const Modal = ({ setOpenModal, openModal }) => {
         <h2 className="m-auto text-center text-white text-3xl">{title}</h2>
         <div className="grid grid-cols-2 p-6 gap-6">
           <div className="overflow-hidden h-72 w-full rounded-lg">
-            <img className="" src={image} alt="" />
+            <img className="rounded-lg" src={image} alt="" />
           </div>
           <div>
             <h3 className="text-xl font-lg mb-2 text-white">Project Info:</h3>
