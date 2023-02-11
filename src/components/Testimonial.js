@@ -14,9 +14,19 @@ const Testimonial = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
   };
   return (
-    <div id="testimonial" className="relative px-12 pb-10 bg-about-bg">
+    <div id="testimonial" className="relative px-8 md:px-12 pb-10 bg-about-bg">
       <Heading back="TESTIMONIAL" front="Client Speak" />
       <Slider {...settings}>
         <TestimonialCard data={testimonialData[0]} />

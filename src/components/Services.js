@@ -34,15 +34,15 @@ const Services = () => {
     "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.";
   let icon5 = <SiTypescript className="text-brand-color text-3xl" />;
   return (
-    <div id="services" className="bg-services-bg relative px-12">
+    <div id="services" className="bg-services-bg relative px-8 md:px-12">
       <Heading back="SERVICES" front="What I Do?" />
-      <div className="grid grid-cols-2">
-        <div className="px-8">
+      <div className="grid md:grid-cols-2">
+        <div className="md:px-8">
           <ServiceDetails title={title1} text={text1} icon={icon1} />
           <ServiceDetails title={title3} text={text3} icon={icon3} />
           <ServiceDetails title={title5} text={text5} icon={icon5} />
         </div>
-        <div className="px-8">
+        <div className="md:px-8">
           <ServiceDetails title={title2} text={text2} icon={icon2} />
           <ServiceDetails title={title4} text={text4} icon={icon4} />
         </div>

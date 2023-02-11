@@ -6,7 +6,7 @@ import Modal from "./miniComp/Modal";
 const Portfolio = () => {
   const [openModal, setOpenModal] = useState(false);
   return (
-    <div id="portfolio" className="px-12 pb-8 relative bg-services-bg">
+    <div id="portfolio" className="px-8 md:px-12 pb-8 relative bg-services-bg">
       <Heading back="PORTFOLIO" front="My Work" />
       {openModal && (
         <Modal

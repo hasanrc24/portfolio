@@ -6,10 +6,10 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div id="contact" className="relative px-12 bg-services-bg pb-8">
+    <div id="contact" className="relative px-8 md:px-12 bg-services-bg pb-8">
       <Heading back="CONTACT" front="Get in Touch" />
-      <div className="grid grid-cols-12 text-left">
-        <div className="col-span-3">
+      <div className="grid md:grid-cols-12 text-left">
+        <div className="md:col-span-3 order-2 md:order-1 mb-4 text-center mx-auto">
           <h3 className="text-2xl font-medium mb-4">ADDRESS</h3>
           <p className="text-lg">
             Terokhadia Poschimpara, <br />
@@ -30,7 +30,7 @@ const Contact = () => {
             </p>
           </div>
           <h3 className="text-2xl font-medium mb-4">FOLLOW ME</h3>
-          <div className="flex gap-3 text-lg">
+          <div className="flex justify-center gap-3 text-lg">
             <a
               className="hover:text-[#4267B2] transition-all"
               href="https://www.facebook.com/hasanrc24"
@@ -51,10 +51,12 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div className="col-span-9 pl-4">
-          <h2 className="text-2xl font-medium">SEND US A NOTE</h2>
+        <div className="md:col-span-9 order-1 md:order-2 mb-6 md:mb-0 md:pl-4">
+          <h2 className="text-center md:text-left text-2xl font-medium">
+            SEND US A NOTE
+          </h2>
           <form className="">
-            <div className="grid grid-cols-2 mt-4 gap-4">
+            <div className="grid md:grid-cols-2 mt-4 gap-4">
               <input
                 className="bg-[#232a31] transition-all duration-200 p-4 rounded-lg focus-visible:outline-none border-x border-y border-[#232a31] focus:border-[#80bdff] focus:shadow-input-shadow"
                 type="text"
@@ -68,7 +70,7 @@ const Contact = () => {
                 name="email"
               />
               <textarea
-                className="col-span-2 bg-[#232a31] transition-all duration-200 p-4 rounded-lg focus-visible:outline-none border-x border-y border-[#232a31] focus:border-[#80bdff] focus:shadow-input-shadow"
+                className="md:col-span-2 bg-[#232a31] transition-all duration-200 p-4 rounded-lg focus-visible:outline-none border-x border-y border-[#232a31] focus:border-[#80bdff] focus:shadow-input-shadow"
                 rows="5"
                 placeholder="Write your message here..."
                 name="textarea"

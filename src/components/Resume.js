@@ -4,9 +4,9 @@ import { BiDownload } from "react-icons/bi";
 
 const Resume = () => {
   return (
-    <div id="resume" className="bg-about-bg relative px-12 pb-8">
+    <div id="resume" className="bg-about-bg relative px-8 md:px-12 pb-8">
       <Heading back="SUMMARY" front="Resume" />
-      <div className="grid grid-cols-2 gap-12 text-left">
+      <div className="grid md:grid-cols-2 gap-12 text-left">
         <div>
           <h3 className="text-2xl font-medium">My Education</h3>
           <div className="my-4 p-4 bg-[#111418] rounded-md">

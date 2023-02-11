@@ -3,11 +3,11 @@ import Heading from "./miniComp/Heading";
 
 const About = () => {
   return (
-    <div id="about" className="bg-about-bg relative px-12">
+    <div id="about" className="bg-about-bg relative px-8 md:px-12">
       <Heading back="ABOUT ME" front="Know Me More" />
       <div>
-        <div className="grid grid-cols-3 text-left">
-          <div className="col-span-2">
+        <div className="grid md:grid-cols-3 text-left">
+          <div className="md:col-span-2 text-center">
             <h4 className="text-2xl font-medium">
               I'm <span className="text-brand-color">Md. Hasasnuzzaman,</span> a
               Frontend Developer
@@ -24,7 +24,7 @@ const About = () => {
               standard dummy text ever when an unknown printer took a galley.
             </p>
           </div>
-          <div className="pl-4">
+          <div className="pl-4 mt-8 md:mt-0">
             <p className="">
               <span className="font-medium pr-2">Name:</span>Md. Hasanuzzaman
             </p>
@@ -48,20 +48,20 @@ const About = () => {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-4 pt-6 pb-14">
-          <div className="border-dotted border-r border-[#4f5252]">
+        <div className="grid grid-cols-2 md:grid-cols-4 pt-6 pb-14">
+          <div className="border-dotted p-4 md:p-0 border-b border-r md:border-b-0 border-[#4f5252]">
             <h2 className=" text-6xl text-[#909294] mb-2">1+</h2>
             <p className="text-[#ccd0d3]">Years Experience</p>
           </div>
-          <div className="border-dotted border-r border-[#4f5252]">
+          <div className="border-dotted p-4 md:p-0 border-b md:border-r md:border-b-0 border-[#4f5252]">
             <h2 className=" text-6xl text-[#909294] mb-2">5+</h2>
             <p className="text-[#ccd0d3]">Happy Clients</p>
           </div>
-          <div className="border-dotted border-r border-[#4f5252]">
+          <div className="border-dotted p-4 md:p-0 border-r border-[#4f5252]">
             <h2 className=" text-6xl text-[#909294] mb-2">25+</h2>
             <p className="text-[#ccd0d3]">Projects Done</p>
           </div>
-          <div className="">
+          <div className=" p-4 md:p-0">
             <h2 className=" text-6xl text-[#909294] mb-2">0</h2>
             <p className="text-[#ccd0d3]">Awards</p>
           </div>

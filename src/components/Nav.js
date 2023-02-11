@@ -4,9 +4,9 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 const Nav = () => {
   const [toggleOpen, setToggleOpen] = useState(false);
   return (
-    <nav className="px-6 py-4 bg-nav-color z-30 text-white flex justify-between items-center md:flex-col flex-row lg:h-screen md:py-10">
+    <nav className="px-6 py-4 bg-nav-color z-30 text-white flex justify-between items-center md:flex-col flex-row  md:h-screen md:py-10">
       <div className="md:flex md:flex-col md:justify-center">
-        <div className="h-44 w-44 hidden md:block rounded-full overflow-hidden border-8 border-img-border">
+        <div className="h-40 w-40 mx-auto hidden md:block rounded-full overflow-hidden border-8 border-img-border">
           <img src="/images/profile.jpg" alt="avatar" />
         </div>
         <a href="#home" className="text-2xl text-center md:mt-2 md:mb-6">
@@ -22,7 +22,7 @@ const Nav = () => {
         <a
           onClick={() => setToggleOpen(!toggleOpen)}
           href="#home"
-          className="hover:text-brand-color transition duration-250 ease-linear"
+          className="hover:text-brand-color transition duration-250 border-b md:border-none ease-linear"
         >
           Home
         </a>
@@ -72,25 +72,25 @@ const Nav = () => {
       <div className="flex gap-5">
         <a
           href="https://www.facebook.com/hasanrc24"
-          className="hover:text-brand-color transition duration-250 ease-linear"
+          className="hover:text-[#4267B2] transition duration-250 ease-linear"
         >
           <FaFacebookF />
         </a>
         <a
           href="/"
-          className="hover:text-brand-color transition duration-250 ease-linear"
+          className="hover:text-[#1DA1F2] transition duration-250 ease-linear"
         >
           <FaTwitter />
         </a>
         <a
           href="https://www.linkedin.com/in/hasanrc24/"
-          className="hover:text-brand-color transition duration-250 ease-linear"
+          className="hover:text-[#0e76a8] transition duration-250 ease-linear"
         >
           <FaLinkedinIn />
         </a>
         <a
           href="https://github.com/hasanrc24"
-          className="hover:text-brand-color transition duration-250 ease-linear"
+          className="hover:text-[#373535] transition duration-250 ease-linear"
         >
           <FaGithub />
         </a>

@@ -21,7 +21,7 @@ const Modal = ({ setOpenModal, openModal }) => {
     <>
       <div
         onClick={() => setOpenModal(false)}
-        className="fixed top-0 left-0 right-0 bottom-0 bg-modal-out-bg"
+        className="fixed z-50 top-0 left-0 right-0 bottom-0 bg-modal-out-bg"
       />
       <div
         className={`box-border z-50 text-modal-text fixed h-fit w-4/5 rounded-lg top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 bg-modal-color`}
