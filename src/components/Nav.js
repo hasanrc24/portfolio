@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Nav = () => {
+  const [toggleOpen, setToggleOpen] = useState(true);
   return (
-    <nav className="bg-nav-color overflow-hidden overflow-y-auto z-10 text-white flex justify-center items-center flex-col h-screen py-10">
-      <div className="h-44 w-44 rounded-full overflow-hidden border-8 border-img-border">
-        <img src="/images/profile.jpg" alt="avatar" />
+    <nav className="px-6 py-4 md:p-0 bg-nav-color z-10 text-white flex justify-between items-center md:flex-col flex-row lg:h-screen md:py-10">
+      <div className="md:flex md:flex-col md:justify-center">
+        <div className="h-44 w-44 hidden md:block rounded-full overflow-hidden border-8 border-img-border">
+          <img src="/images/profile.jpg" alt="avatar" />
+        </div>
+        <a href="#home" className="text-2xl text-center md:mt-2 md:mb-6">
+          Md Hasan
+        </a>
       </div>
-      <h4 className="text-2xl mt-2 mb-6">Md Hasan</h4>
-      <div className="flex flex-col justify-center items-center gap-5 mb-8">
+      <div className="hidden md:flex md:flex-col  justify-center items-center gap-5 mb-8">
         <a
           href="#home"
           className="hover:text-brand-color transition duration-250 ease-linear"
@@ -77,6 +82,26 @@ const Nav = () => {
         >
           <FaGithub />
         </a>
+        <button
+          onClick={() => setToggleOpen(!toggleOpen)}
+          className="md:hidden flex flex-col gap-[5px]"
+        >
+          <span
+            className={`h-[3px] w-6 bg-white rounded-full transition-all duration-300 ${
+              toggleOpen ? " origin-top-left rotate-45" : ""
+            }`}
+          ></span>
+          <span
+            className={`h-[3px] w-6 bg-white rounded-full transition-all duration-300 ${
+              toggleOpen ? "w-0 opacity-0" : "opacity-1"
+            }`}
+          ></span>
+          <span
+            className={`h-[3px] w-6 bg-white rounded-full transition-all duration-300 ${
+              toggleOpen ? "origin-bottom-left -rotate-45" : ""
+            }`}
+          ></span>
+        </button>
       </div>
     </nav>
   );
