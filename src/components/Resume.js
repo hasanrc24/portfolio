@@ -40,12 +40,14 @@ const Resume = () => {
           </div>
         </div>
       </div>
-      <button className="rounded-full flex items-center gap-2 m-auto border-2 border-[#6c757d] text-[#6c757d] mt-6 px-7 py-3 hover:bg-[#6c757d] hover:text-white transition-all">
-        <span>Download CV</span>
-        <span className="text-xl">
-          <BiDownload />
-        </span>
-      </button>
+      <a href="/resume/Hasan_resume.pdf" download>
+        <button className="rounded-full flex items-center gap-2 m-auto border-2 border-[#6c757d] text-[#6c757d] mt-6 px-7 py-3 hover:bg-[#6c757d] hover:text-white transition-all">
+          <span>Download CV</span>
+          <span className="text-xl">
+            <BiDownload />
+          </span>
+        </button>
+      </a>
     </div>
   );
 };

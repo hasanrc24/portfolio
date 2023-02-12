@@ -43,9 +43,11 @@ const About = () => {
               <span className="font-medium pr-2">From:</span>
               Rajshahi, Bangladesh
             </p>
-            <button className="bg-brand-color my-6 px-6 py-3 rounded-full">
-              Download CV
-            </button>
+            <a href="/resume/Hasan_resume.pdf" download>
+              <button className="bg-brand-color my-6 px-6 py-3 rounded-full">
+                Download CV
+              </button>
+            </a>
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 pt-6 pb-14">

@@ -28,31 +28,49 @@ const IsotopeReact = ({ setOpenModal }) => {
       : isotope.current.arrange({ filter: `.${filterKey}` });
   }, [filterKey]);
 
-  const handleFilterKeyChange = (key) => () => setFilterKey(key);
+  const handleFilterKeyChange = (key) => () => {
+    setFilterKey(key);
+  };
 
   return (
     <>
       <div className="flex justify-center mb-4 font-medium">
         <span
-          className="text-brand-color border-b-2 border-brand-color px-4 cursor-pointer"
+          className={`${
+            filterKey === "*"
+              ? "text-brand-color border-brand-color "
+              : "text-white border-transparent"
+          } transition-all hover:text-brand-color border-b-2 hover:border-brand-color px-4 py-2 cursor-pointer`}
           onClick={handleFilterKeyChange("*")}
         >
           All
         </span>
         <span
-          className=" px-4 cursor-pointer"
+          className={`border-b-2 ${
+            filterKey === "react"
+              ? "text-brand-color border-brand-color "
+              : "text-white border-transparent"
+          } transition-all hover:text-brand-color  hover:border-brand-color px-4 py-2 cursor-pointer`}
           onClick={handleFilterKeyChange("react")}
         >
           React.js
         </span>
         <span
-          className=" px-4 cursor-pointer"
+          className={`${
+            filterKey === "next"
+              ? "text-brand-color border-brand-color "
+              : "text-white border-transparent"
+          } transition-all hover:text-brand-color border-b-2 hover:border-brand-color px-4 py-2 cursor-pointer`}
           onClick={handleFilterKeyChange("next")}
         >
           Next.js
         </span>
         <span
-          className=" px-4 cursor-pointer"
+          className={`${
+            filterKey === "type"
+              ? "text-brand-color border-brand-color "
+              : "text-white border-transparent"
+          } transition-all hover:text-brand-color border-b-2 hover:border-brand-color px-4 py-2 cursor-pointer`}
           onClick={handleFilterKeyChange("type")}
         >
           TypeScript

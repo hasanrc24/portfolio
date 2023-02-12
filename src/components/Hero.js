@@ -1,6 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { AiOutlineDown } from "react-icons/ai";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -28,9 +29,11 @@ const Hero = () => {
         <h5 className="text-lg md:text-xl font-medium">
           based in Rajshahi, Bangladesh.
         </h5>
-        <button className="mt-6 border-2 font-medium border-brand-color px-7 py-3 rounded-full text-brand-color hover:text-white hover:bg-brand-color transition duration-250 ease-linear">
-          Hire Me
-        </button>
+        <Link to="contact" spy={true}>
+          <button className="mt-6 border-2 font-medium border-brand-color px-7 py-3 rounded-full text-brand-color hover:text-white hover:bg-brand-color transition duration-250 ease-linear">
+            Hire Me
+          </button>
+        </Link>
         <a
           href="#about"
           className=" animate-bounce absolute bottom-5 md:bottom-10 text-2xl"
