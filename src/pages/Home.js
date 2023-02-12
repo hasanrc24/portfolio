@@ -10,11 +10,11 @@ import Testimonial from "../components/Testimonial";
 
 const Home = () => {
   return (
-    <div className="md:grid md:grid-cols-5 items-start">
+    <div className="lg:grid lg:grid-cols-5 items-start">
       <div className="sticky top-0 z-30">
         <Nav />
       </div>
-      <div className="col-span-4 text-white text-center">
+      <div className="lg:col-span-4 text-white text-center">
         <Hero />
         <About />
         <Services />

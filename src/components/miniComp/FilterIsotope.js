@@ -64,7 +64,7 @@ const IsotopeReact = ({ setOpenModal }) => {
             setOpenModal(true);
             dispatch(modalInfo(workData[0]));
           }}
-          className="filter-item m-4 w-80 h-48 sm:w-52 sm:h-32 md:w-72 md:h-48 overflow-hidden rounded-lg next type"
+          className="filter-item m-3 lg:m-4 w-80 h-48 md:w-[19rem] lg:w-72 md:h-[11rem] overflow-hidden rounded-lg next type"
         >
           <div className="cursor-pointer group">
             <img
@@ -83,7 +83,7 @@ const IsotopeReact = ({ setOpenModal }) => {
             setOpenModal(true);
             dispatch(modalInfo(workData[1]));
           }}
-          className="filter-item m-4 m-4 w-80 h-48 sm:w-52 sm:h-32 md:w-72 md:h-48 rounded-lg overflow-hidden react"
+          className="filter-item m-3 lg:m-4 w-80 h-48 md:w-[19rem] lg:w-72 md:h-[11rem] rounded-lg overflow-hidden react"
         >
           <div className="cursor-pointer group">
             <img
@@ -102,7 +102,7 @@ const IsotopeReact = ({ setOpenModal }) => {
             setOpenModal(true);
             dispatch(modalInfo(workData[2]));
           }}
-          className="filter-item m-4 rounded-lg m-4 w-80 h-48 sm:w-52 sm:h-32 md:w-72 md:h-48 overflow-hidden react"
+          className="filter-item m-3 lg:m-4 rounded-lg w-80 h-48 md:w-[19rem] lg:w-72 md:h-[11rem] overflow-hidden react"
         >
           <div className="cursor-pointer group ">
             <img
@@ -121,7 +121,7 @@ const IsotopeReact = ({ setOpenModal }) => {
             setOpenModal(true);
             dispatch(modalInfo(workData[3]));
           }}
-          className="filter-item m-4 rounded-lg w-80 h-48 sm:w-52 sm:h-32 md:w-72 md:h-48 overflow-hidden react"
+          className="filter-item m-3 lg:m-4 rounded-lg w-80 h-48 md:w-[19rem] lg:w-72 md:h-[11rem] overflow-hidden react"
         >
           <div className="cursor-pointer group">
             <img
@@ -140,7 +140,7 @@ const IsotopeReact = ({ setOpenModal }) => {
             setOpenModal(true);
             dispatch(modalInfo(workData[4]));
           }}
-          className="filter-item m-4 rounded-lg w-80 h-48 sm:w-52 sm:h-32 md:w-72 md:h-48 overflow-hidden next"
+          className="filter-item m-3 lg:m-4 rounded-lg w-80 h-48 md:w-[19rem] lg:w-72 md:h-[11rem] overflow-hidden next"
         >
           <div className="cursor-pointer group">
             <img

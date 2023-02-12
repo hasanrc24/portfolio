@@ -4,25 +4,25 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 const Nav = () => {
   const [toggleOpen, setToggleOpen] = useState(false);
   return (
-    <nav className="px-6 py-4 bg-nav-color z-30 text-white flex justify-between items-center md:flex-col flex-row  md:h-screen md:py-10">
-      <div className="md:flex md:flex-col md:justify-center">
-        <div className="h-40 w-40 mx-auto hidden md:block rounded-full overflow-hidden border-8 border-img-border">
+    <nav className="px-6 py-4 bg-nav-color z-30 text-white flex justify-between items-center lg:flex-col flex-row  lg:h-screen lg:py-10">
+      <div className="lg:flex lg:flex-col lg:justify-center">
+        <div className="h-40 w-40 mx-auto hidden lg:block rounded-full overflow-hidden border-8 border-img-border">
           <img src="/images/profile.jpg" alt="avatar" />
         </div>
-        <a href="#home" className="text-2xl text-center md:mt-2 md:mb-6">
+        <a href="#home" className="text-2xl text-center lg:mt-2 lg:mb-6">
           Md Hasan
         </a>
       </div>
       {/* <div className="hidden md:flex md:flex-col justify-center items-center gap-5 mb-8"> */}
       <div
-        className={`-z-10 transition-all duration-300 absolute md:static md:z-10 left-0 py-6 md:py-0 w-full flex flex-col bg-nav-color justify-center items-center gap-5 md:mb-8 ${
+        className={`-z-10 transition-all duration-300 absolute lg:static lg:z-10 left-0 py-6 lg:py-0 w-full flex flex-col bg-nav-color justify-center items-center gap-5 lg:mb-8 ${
           toggleOpen ? " top-16" : " -top-96"
         }`}
       >
         <a
           onClick={() => setToggleOpen(!toggleOpen)}
           href="#home"
-          className="hover:text-brand-color transition duration-250 border-b md:border-none ease-linear"
+          className="hover:text-brand-color transition duration-250 border-b lg:border-none ease-linear"
         >
           Home
         </a>
@@ -96,7 +96,7 @@ const Nav = () => {
         </a>
         <button
           onClick={() => setToggleOpen(!toggleOpen)}
-          className="md:hidden flex flex-col gap-[5px]"
+          className="lg:hidden flex flex-col gap-[5px]"
         >
           <span
             className={`h-[3px] w-6 bg-white rounded-full transition-all duration-300 ${
