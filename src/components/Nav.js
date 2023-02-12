@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   const [toggleOpen, setToggleOpen] = useState(false);
@@ -9,9 +10,14 @@ const Nav = () => {
         <div className="h-40 w-40 mx-auto hidden lg:block rounded-full overflow-hidden border-8 border-img-border">
           <img src="/images/profile.jpg" alt="avatar" />
         </div>
-        <a href="#home" className="text-2xl text-center lg:mt-2 lg:mb-6">
+        <Link
+          to="home"
+          spy={true}
+          activeClass="abc"
+          className="text-2xl cursor-pointer text-center lg:mt-2 lg:mb-6"
+        >
           Md Hasan
-        </a>
+        </Link>
       </div>
       {/* <div className="hidden md:flex md:flex-col justify-center items-center gap-5 mb-8"> */}
       <div
@@ -19,55 +25,82 @@ const Nav = () => {
           toggleOpen ? " top-16" : " -top-96"
         }`}
       >
-        <a
+        <Link
+          to="home"
+          spy={true}
+          // smooth={true}
+          // offset={50}
+          // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          href="#home"
-          className="hover:text-brand-color transition duration-250 border-b lg:border-none ease-linear"
+          className="hover:text-brand-color cursor-pointer transition duration-250 border-b lg:border-none ease-linear"
         >
           Home
-        </a>
-        <a
+        </Link>
+        <Link
+          to="about"
+          spy={true}
+          // smooth={true}
+          // offset={50}
+          // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          href="#about"
-          className="hover:text-brand-color transition duration-250 ease-linear"
+          className="hover:text-brand-color cursor-pointer transition duration-250 ease-linear"
         >
           About Me
-        </a>
-        <a
+        </Link>
+        <Link
+          to="services"
+          spy={true}
+          // smooth={true}
+          // offset={50}
+          // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          href="#services"
-          className="hover:text-brand-color transition duration-250 ease-linear"
+          className="hover:text-brand-color cursor-pointer transition duration-250 ease-linear"
         >
           What I Do
-        </a>
-        <a
+        </Link>
+        <Link
+          to="resume"
+          spy={true}
+          // smooth={true}
+          // offset={50}
+          // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          href="#resume"
-          className="hover:text-brand-color transition duration-250 ease-linear"
+          className="hover:text-brand-color cursor-pointer transition duration-250 ease-linear"
         >
           Resume
-        </a>
-        <a
+        </Link>
+        <Link
+          to="portfolio"
+          spy={true}
+          // smooth={true}
+          // offset={50}
+          // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          href="#portfolio"
-          className="hover:text-brand-color transition duration-250 ease-linear"
+          className="hover:text-brand-color cursor-pointer transition duration-250 ease-linear"
         >
           Portfolio
-        </a>
-        <a
+        </Link>
+        <Link
+          to="testimonial"
+          spy={true}
+          // smooth={true}
+          // offset={50}
+          // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          href="#testimonial"
-          className="hover:text-brand-color transition duration-250 ease-linear"
+          className="hover:text-brand-color cursor-pointer transition duration-250 ease-linear"
         >
           Testimonial
-        </a>
-        <a
+        </Link>
+        <Link
+          to="contact"
+          spy={true}
+          // smooth={true}
+          // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          href="#contact"
-          className="hover:text-brand-color transition duration-250 ease-linear"
+          className="hover:text-brand-color cursor-pointer transition duration-250 ease-linear"
         >
           Contact
-        </a>
+        </Link>
       </div>
       <div className="flex gap-5">
         <a
