@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceDetails = ({ title, text, icon }) => {
   return (
-    <div className="flex mb-12">
+    <div className="flex mb-8">
       <div>
         <div className="bg-[#212529] p-5 rounded-lg">{icon}</div>
       </div>

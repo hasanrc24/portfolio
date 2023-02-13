@@ -97,7 +97,7 @@ const Contact = () => {
             </p>
           </div>
           <h3 className="text-2xl font-medium mb-4">FOLLOW ME</h3>
-          <div className="flex justify-center gap-3 text-lg">
+          <div className="flex justify-center md:justify-start gap-3 text-lg">
             <a
               className="hover:text-[#4267B2] transition-all"
               href="https://www.facebook.com/hasanrc24"

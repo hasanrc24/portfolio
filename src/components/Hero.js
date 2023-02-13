@@ -38,7 +38,7 @@ const Hero = () => {
           to="about"
           spy={true}
           offset={-50}
-          className=" animate-bounce absolute bottom-5 md:bottom-10 text-2xl"
+          className="cursor-pointer animate-bounce absolute bottom-5 md:bottom-10 text-2xl"
         >
           <AiOutlineDown className="" />
         </Link>

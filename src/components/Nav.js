@@ -20,7 +20,6 @@ const Nav = () => {
           Md Hasan
         </Link>
       </div>
-      {/* <div className="hidden md:flex md:flex-col justify-center items-center gap-5 mb-8"> */}
       <div
         className={`-z-10 transition-all duration-300 absolute lg:static lg:z-10 left-0 py-6 lg:py-0 w-full flex flex-col bg-nav-color justify-center items-center gap-5 lg:mb-8 ${
           toggleOpen ? " top-16" : " -top-96"
@@ -111,7 +110,10 @@ const Nav = () => {
         >
           <FaFacebookF />
         </a>
-        <a href="/" className="hover:text-[#1DA1F2] transition  ease-linear">
+        <a
+          href="https://twitter.com/md_hasan_"
+          className="hover:text-[#1DA1F2] transition  ease-linear"
+        >
           <FaTwitter />
         </a>
         <a

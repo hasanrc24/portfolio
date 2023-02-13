@@ -7,21 +7,20 @@ const About = () => {
       <Heading back="ABOUT ME" front="Know Me More" />
       <div>
         <div className="grid md:grid-cols-3 text-left">
-          <div className="md:col-span-2 text-center">
+          <div className="md:col-span-2 text-center md:text-left">
             <h4 className="text-2xl font-medium">
               I'm <span className="text-brand-color">Md. Hasasnuzzaman,</span> a
               Frontend Developer
             </h4>
             <p className="text-[#6d7072] mt-4 font-medium">
-              I help you build brand for your business at an affordable price.
-              Thousands of clients have procured exceptional results while
-              working with our dedicated team. when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book.{" "}
-              <br />
-              <br />
-              Delivering work within time and budget which meets client’s
-              requirements is our moto. Lorem Ipsum has been the industry's
-              standard dummy text ever when an unknown printer took a galley.
+              As a frontend developer, I have honed my skills in React.js,
+              Next.js, and TypeScript. I am experienced in creating dynamic and
+              interactive user interfaces that seamlessly integrate with
+              back-end systems. My knowledge of the latest frontend technologies
+              and drive to stay current with industry trends allows me to
+              consistently deliver high-quality projects. <br /> <br />I have a
+              strong attention to detail and problem-solving skills, ensuring
+              that every project I work on is delivered to the highest standard.
             </p>
           </div>
           <div className="pl-4 mt-8 md:mt-0">

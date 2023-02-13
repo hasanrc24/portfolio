@@ -20,8 +20,10 @@ const Resume = () => {
               Daffodil International University, Dhaka
             </h5>
             <p className="text-text-color mt-4">
-              Lisque persius interesset his et, in quot quidam persequeris vim,
-              ad mea essent possim iriure.
+              My time at Daffodil International University was filled with
+              meaningful coursework and hands-on learning experiences that
+              prepared me for the challenges and opportunities of the
+              professional world.
             </p>
           </div>
         </div>
@@ -34,8 +36,9 @@ const Resume = () => {
             <h4 className="text-2xl font-medium py-4">Frontend Developer</h4>
             <h5 className="text-brand-color">Element Zero Labs</h5>
             <p className="text-text-color mt-4">
-              Lisque persius interesset his et, in quot quidam persequeris vim,
-              ad mea essent possim iriure.
+              I was a part of the Frontend team for the company Element Zero
+              Labs in order to build Carbon which is a web3 NFT marketplace
+              platform.
             </p>
           </div>
         </div>

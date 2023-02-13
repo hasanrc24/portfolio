@@ -9,29 +9,29 @@ import { SiTypescript } from "react-icons/si";
 const Services = () => {
   let title1 = "Frontend Development";
   let text1 =
-    "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.";
+    "A highly motivated and Skilled frontend developer specializing in Reactjs, Nextjs. Passionate about delivering user-friendly, accessible, and responsive websites.";
   let icon1 = <FaPalette className="text-brand-color text-3xl" />;
 
   let title2 = "Web Design";
   let text2 =
-    "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.";
+    "Experienced web designer with a strong eye for aesthetics and user experience. Proficient in HTML, CSS, Bootstrap, Tailwind CSS.";
   let icon2 = (
     <HiOutlineDesktopComputer className="text-brand-color text-3xl" />
   );
 
   let title3 = "React.js";
   let text3 =
-    "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.";
+    "ReactJS specialist with a focus on creating scalable, high-performance web applications. Proficient in React functionalities";
   let icon3 = <FaReact className="text-brand-color text-3xl" />;
 
   let title4 = "Next.js";
   let text4 =
-    "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.";
+    "Skilled in creating server-side rendered, optimized, and scalable web applications with NextJS.";
   let icon4 = <TbBrandNextjs className="text-brand-color text-3xl" />;
 
   let title5 = "TypeScript";
   let text5 =
-    "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.";
+    "Proficient in using TypeScript to improve the reliability and maintainability of my code.";
   let icon5 = <SiTypescript className="text-brand-color text-3xl" />;
   return (
     <div id="services" className="bg-services-bg relative px-8 md:px-12">
