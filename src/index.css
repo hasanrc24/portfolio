@@ -9,20 +9,23 @@
 }
 
 .slick-dots li button:before{
-    /* color: #242A65 !important; */
     font-size: 12px !important;
     width: 90%;
 }
 .slick-dots li.slick-active button:before{
     color: #20c997 !important;
-    border: 1px solid #20c997;
     border-radius: 30px;
     display: flex;
     padding: 0 2px;
     transition: none !important;
 }
-
 .active{
     color: #20c997;
     border-color: #20c997 !important;
+}
+
+@media (min-width: 768px) {
+    .md\:col-span-9 {
+        grid-column: span 9 / span 9 !important;
+    }
 }

@@ -14,6 +14,7 @@ const Nav = () => {
           to="home"
           spy={true}
           activeClass="abc"
+          onClick={() => setToggleOpen(false)}
           className="text-2xl cursor-pointer text-center lg:mt-2 lg:mb-6"
         >
           Md Hasan
@@ -29,10 +30,10 @@ const Nav = () => {
           to="home"
           spy={true}
           // smooth={true}
-          // offset={50}
+          offset={-50}
           // duration={300}
-          onClick={() => setToggleOpen(!toggleOpen)}
-          className="hover:text-brand-color cursor-pointer transition  border-b border-transparent lg:border-none ease-linear"
+          onClick={() => setToggleOpen(false)}
+          className={`hover:text-brand-color cursor-pointer transition border-b border-transparent lg:border-none ease-linear`}
         >
           Home
         </Link>
@@ -40,9 +41,9 @@ const Nav = () => {
           to="about"
           spy={true}
           // smooth={true}
-          // offset={50}
+          offset={-50}
           // duration={300}
-          onClick={() => setToggleOpen(!toggleOpen)}
+          onClick={() => setToggleOpen(false)}
           className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
           About Me
@@ -51,9 +52,9 @@ const Nav = () => {
           to="services"
           spy={true}
           // smooth={true}
-          // offset={50}
+          offset={-50}
           // duration={300}
-          onClick={() => setToggleOpen(!toggleOpen)}
+          onClick={() => setToggleOpen(false)}
           className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
           What I Do
@@ -62,9 +63,9 @@ const Nav = () => {
           to="resume"
           spy={true}
           // smooth={true}
-          // offset={50}
+          offset={-50}
           // duration={300}
-          onClick={() => setToggleOpen(!toggleOpen)}
+          onClick={() => setToggleOpen(false)}
           className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
           Resume
@@ -73,9 +74,9 @@ const Nav = () => {
           to="portfolio"
           spy={true}
           // smooth={true}
-          // offset={50}
+          offset={-50}
           // duration={300}
-          onClick={() => setToggleOpen(!toggleOpen)}
+          onClick={() => setToggleOpen(false)}
           className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
           Portfolio
@@ -84,9 +85,9 @@ const Nav = () => {
           to="testimonial"
           spy={true}
           // smooth={true}
-          // offset={50}
+          offset={-50}
           // duration={300}
-          onClick={() => setToggleOpen(!toggleOpen)}
+          onClick={() => setToggleOpen(false)}
           className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
           Testimonial
@@ -95,8 +96,9 @@ const Nav = () => {
           to="contact"
           spy={true}
           // smooth={true}
+          offset={-50}
           // duration={300}
-          onClick={() => setToggleOpen(!toggleOpen)}
+          onClick={() => setToggleOpen(false)}
           className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
           Contact

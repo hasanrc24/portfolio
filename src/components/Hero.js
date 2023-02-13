@@ -29,7 +29,7 @@ const Hero = () => {
         <h5 className="text-lg md:text-xl font-medium">
           based in Rajshahi, Bangladesh.
         </h5>
-        <Link to="contact" spy={true}>
+        <Link to="contact" spy={true} offset={-50}>
           <button className="mt-6 border-2 font-medium border-brand-color px-7 py-3 rounded-full text-brand-color hover:text-white hover:bg-brand-color transition duration-250 ease-linear">
             Hire Me
           </button>
@@ -37,6 +37,7 @@ const Hero = () => {
         <Link
           to="about"
           spy={true}
+          offset={-50}
           className=" animate-bounce absolute bottom-5 md:bottom-10 text-2xl"
         >
           <AiOutlineDown className="" />

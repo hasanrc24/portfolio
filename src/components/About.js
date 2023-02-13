@@ -60,7 +60,7 @@ const About = () => {
             <p className="text-[#ccd0d3]">Happy Clients</p>
           </div>
           <div className="border-dotted p-4 md:p-0 border-r border-[#4f5252]">
-            <h2 className=" text-6xl text-[#909294] mb-2">25+</h2>
+            <h2 className=" text-6xl text-[#909294] mb-2">20+</h2>
             <p className="text-[#ccd0d3]">Projects Done</p>
           </div>
           <div className=" p-4 md:p-0">

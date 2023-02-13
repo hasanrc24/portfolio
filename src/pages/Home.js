@@ -41,7 +41,7 @@ const Home = () => {
         <Testimonial />
         <Contact />
         {isVisible && (
-          <span className="fixed cursor-pointer bottom-6 right-6 text-4xl p-1 rounded-full bg-[rgba(0,0,0,.2)]">
+          <span className="fixed cursor-pointer bottom-6 right-6 text-3xl md:text-4xl p-1 rounded-full bg-[rgba(0,0,0,.2)]">
             <Link to="home" spy={true}>
               <MdKeyboardArrowUp className="" />
             </Link>
