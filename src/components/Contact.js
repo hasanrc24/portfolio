@@ -51,7 +51,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div className="md:col-span-9 order-1 md:order-2 mb-6 md:mb-0 md:pl-4">
+        <div className="md:col-span-9 order-1 md:order-2 mb-8 md:mb-0 md:pl-4">
           <h2 className="text-center md:text-left text-2xl font-medium">
             SEND US A NOTE
           </h2>
@@ -84,7 +84,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className="text-left mt-6">
+      <div className="text-center md:text-left mt-6">
         Copyright © {new Date().getFullYear()}{" "}
         <a
           href="https://www.linkedin.com/in/hasanrc24/"

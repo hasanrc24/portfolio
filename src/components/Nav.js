@@ -32,7 +32,7 @@ const Nav = () => {
           // offset={50}
           // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          className="hover:text-brand-color cursor-pointer transition duration-250 border-b lg:border-none ease-linear"
+          className="hover:text-brand-color cursor-pointer transition  border-b border-transparent lg:border-none ease-linear"
         >
           Home
         </Link>
@@ -43,7 +43,7 @@ const Nav = () => {
           // offset={50}
           // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          className="hover:text-brand-color cursor-pointer transition duration-250 ease-linear"
+          className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
           About Me
         </Link>
@@ -54,7 +54,7 @@ const Nav = () => {
           // offset={50}
           // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          className="hover:text-brand-color cursor-pointer transition duration-250 ease-linear"
+          className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
           What I Do
         </Link>
@@ -65,7 +65,7 @@ const Nav = () => {
           // offset={50}
           // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          className="hover:text-brand-color cursor-pointer transition duration-250 ease-linear"
+          className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
           Resume
         </Link>
@@ -76,7 +76,7 @@ const Nav = () => {
           // offset={50}
           // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          className="hover:text-brand-color cursor-pointer transition duration-250 ease-linear"
+          className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
           Portfolio
         </Link>
@@ -87,7 +87,7 @@ const Nav = () => {
           // offset={50}
           // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          className="hover:text-brand-color cursor-pointer transition duration-250 ease-linear"
+          className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
           Testimonial
         </Link>
@@ -97,7 +97,7 @@ const Nav = () => {
           // smooth={true}
           // duration={300}
           onClick={() => setToggleOpen(!toggleOpen)}
-          className="hover:text-brand-color cursor-pointer transition duration-250 ease-linear"
+          className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
           Contact
         </Link>
@@ -105,25 +105,22 @@ const Nav = () => {
       <div className="flex gap-5">
         <a
           href="https://www.facebook.com/hasanrc24"
-          className="hover:text-[#4267B2] transition duration-250 ease-linear"
+          className="hover:text-[#4267B2] transition  ease-linear"
         >
           <FaFacebookF />
         </a>
-        <a
-          href="/"
-          className="hover:text-[#1DA1F2] transition duration-250 ease-linear"
-        >
+        <a href="/" className="hover:text-[#1DA1F2] transition  ease-linear">
           <FaTwitter />
         </a>
         <a
           href="https://www.linkedin.com/in/hasanrc24/"
-          className="hover:text-[#0e76a8] transition duration-250 ease-linear"
+          className="hover:text-[#0e76a8] transition  ease-linear"
         >
           <FaLinkedinIn />
         </a>
         <a
           href="https://github.com/hasanrc24"
-          className="hover:text-[#373535] transition duration-250 ease-linear"
+          className="hover:text-[#373535] transition  ease-linear"
         >
           <FaGithub />
         </a>

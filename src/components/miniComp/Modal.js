@@ -21,7 +21,7 @@ const Modal = ({ setOpenModal, openModal }) => {
     <>
       <div
         onClick={() => setOpenModal(false)}
-        className="fixed z-50 top-0 left-0 right-0 bottom-0 bg-modal-out-bg"
+        className="fixed z-50  top-0 left-0 right-0 bottom-0 bg-modal-out-bg"
       />
       <div
         className={`box-border z-50 text-modal-text fixed h-fit w-4/5 rounded-lg top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 bg-modal-color`}
@@ -33,8 +33,8 @@ const Modal = ({ setOpenModal, openModal }) => {
           <IoCloseOutline />
         </button>
         <h2 className="m-auto text-center text-white text-3xl">{title}</h2>
-        <div className="grid grid-cols-2 p-6 gap-6">
-          <div className="overflow-hidden h-72 w-full rounded-lg">
+        <div className="grid md:grid-cols-2 p-6 gap-6">
+          <div className="overflow-hidden h-44 md:h-72 w-full rounded-lg">
             <img className="rounded-lg" src={image} alt="" />
           </div>
           <div>

@@ -34,12 +34,13 @@ const Hero = () => {
             Hire Me
           </button>
         </Link>
-        <a
-          href="#about"
+        <Link
+          to="about"
+          spy={true}
           className=" animate-bounce absolute bottom-5 md:bottom-10 text-2xl"
         >
           <AiOutlineDown className="" />
-        </a>
+        </Link>
       </div>
     </div>
   );

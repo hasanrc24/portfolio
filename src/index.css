@@ -24,4 +24,5 @@
 
 .active{
     color: #20c997;
+    border-color: #20c997 !important;
 }
