@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import { AiOutlineDown } from "react-icons/ai";
 import { Link } from "react-scroll";
 
-const Hero = () => {
+const Hero = ({ offset }) => {
   return (
     <div
       id="home"
@@ -14,7 +14,7 @@ const Hero = () => {
         <TypeAnimation
           sequence={[
             "I'm Md. Hasanuzzaman",
-            2000, // Waits 1s
+            2000, // Waits 2s
             "I am a Frontend Developer!",
             2000, // Waits 2s
             "React.js, Next.js, TypeScript",
@@ -23,13 +23,12 @@ const Hero = () => {
           wrapper="div"
           cursor={true}
           repeat={Infinity}
-          // style={{ fontSize: "3.5em", fontWeight: "700" }}
           className="my-6 font-bold text-3xl md:text-5xl"
         />
         <h5 className="text-lg md:text-xl font-medium">
           based in Rajshahi, Bangladesh.
         </h5>
-        <Link to="contact" spy={true} offset={-50}>
+        <Link to="contact" spy={true} offset={offset}>
           <button className="mt-6 border-2 font-medium border-brand-color px-7 py-3 rounded-full text-brand-color hover:text-white hover:bg-brand-color transition duration-250 ease-linear">
             Hire Me
           </button>
@@ -37,7 +36,7 @@ const Hero = () => {
         <Link
           to="about"
           spy={true}
-          offset={-50}
+          offset={offset}
           className="cursor-pointer animate-bounce absolute bottom-5 md:bottom-10 text-2xl"
         >
           <AiOutlineDown className="" />

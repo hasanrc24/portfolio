@@ -44,7 +44,7 @@ const Home = () => {
         <Nav offset={offset} />
       </div>
       <div className="lg:col-span-4 text-white text-center">
-        <Hero />
+        <Hero offset={offset} />
         <About />
         <Services />
         <Resume />
