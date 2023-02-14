@@ -87,7 +87,7 @@ const IsotopeReact = ({ setOpenModal }) => {
           <div className="cursor-pointer group">
             <img
               className="h-48 duration-1000"
-              src="/images/portfolio/next-blog-pic.png"
+              src="/portfolio/images/portfolio/next-blog-pic.png"
               alt="next-blog"
             />
             <div className="absolute flex items-center justify-center flex-col top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gray-800 group-hover:opacity-70">
@@ -106,7 +106,7 @@ const IsotopeReact = ({ setOpenModal }) => {
           <div className="cursor-pointer group">
             <img
               className=" group-hover:-translate-y-44 transition-all duration-1000"
-              src="/images/portfolio/e-com-pic.png"
+              src="/portfolio/images/portfolio/e-com-pic.png"
               alt="e-com"
             />
             <div className="absolute flex items-center justify-center flex-col top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gray-800 group-hover:opacity-80">
@@ -125,7 +125,7 @@ const IsotopeReact = ({ setOpenModal }) => {
           <div className="cursor-pointer group ">
             <img
               className="group-hover:-translate-y-72 transition-all duration-1000"
-              src="/images/portfolio/creative-agency-pic.png"
+              src="/portfolio/images/portfolio/creative-agency-pic.png"
               alt="e-com"
             />
             <div className="absolute flex items-center justify-center flex-col top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gray-800 group-hover:opacity-80">
@@ -144,7 +144,7 @@ const IsotopeReact = ({ setOpenModal }) => {
           <div className="cursor-pointer group">
             <img
               className="group-hover:-translate-y-72 transition-all duration-1000"
-              src="/images/portfolio/doctors-portal-pic.png"
+              src="/portfolio/images/portfolio/doctors-portal-pic.png"
               alt="e-com"
             />
             <div className="absolute flex items-center justify-center flex-col top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gray-800 group-hover:opacity-80">
@@ -163,7 +163,7 @@ const IsotopeReact = ({ setOpenModal }) => {
           <div className="cursor-pointer group">
             <img
               className="group-hover:-translate-y-60 transition-all duration-1000"
-              src="/images/portfolio/twee-sketch-pic.png"
+              src="/portfolio/images/portfolio/twee-sketch-pic.png"
               alt="e-com"
             />
             <div className="absolute flex items-center justify-center flex-col top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gray-800 group-hover:opacity-80">

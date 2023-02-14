@@ -8,7 +8,7 @@ const Nav = () => {
     <nav className="px-6 py-4 bg-nav-color z-30 text-white flex justify-between items-center lg:flex-col flex-row  lg:h-screen lg:py-10">
       <div className="lg:flex lg:flex-col lg:justify-center">
         <div className="h-40 w-40 mx-auto hidden lg:block rounded-full overflow-hidden border-8 border-img-border">
-          <img src="/images/profile.jpg" alt="avatar" />
+          <img src="/portfolio/images/profile.jpg" alt="avatar" />
         </div>
         <Link
           to="home"
