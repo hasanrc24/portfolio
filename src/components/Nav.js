@@ -5,8 +5,6 @@ import { Link } from "react-scroll";
 const Nav = ({ offset }) => {
   const [toggleOpen, setToggleOpen] = useState(false);
 
-  console.log(offset);
-
   return (
     <nav className="px-6 py-4 bg-nav-color z-30 text-white flex justify-between items-center lg:flex-col flex-row  lg:h-screen lg:py-10">
       <div className="lg:flex lg:flex-col lg:justify-center">
