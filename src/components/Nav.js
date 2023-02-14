@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { Link } from "react-scroll";
 
-const Nav = () => {
+const Nav = ({ offset }) => {
   const [toggleOpen, setToggleOpen] = useState(false);
+
+  console.log(offset);
+
   return (
     <nav className="px-6 py-4 bg-nav-color z-30 text-white flex justify-between items-center lg:flex-col flex-row  lg:h-screen lg:py-10">
       <div className="lg:flex lg:flex-col lg:justify-center">
@@ -14,6 +17,7 @@ const Nav = () => {
           to="home"
           spy={true}
           activeClass="abc"
+          offset={offset}
           onClick={() => setToggleOpen(false)}
           className="text-2xl cursor-pointer text-center lg:mt-2 lg:mb-6"
         >
@@ -28,9 +32,7 @@ const Nav = () => {
         <Link
           to="home"
           spy={true}
-          // smooth={true}
-          offset={-50}
-          // duration={300}
+          offset={offset}
           onClick={() => setToggleOpen(false)}
           className={`hover:text-brand-color cursor-pointer transition border-b border-transparent lg:border-none ease-linear`}
         >
@@ -39,9 +41,7 @@ const Nav = () => {
         <Link
           to="about"
           spy={true}
-          // smooth={true}
-          offset={-50}
-          // duration={300}
+          offset={offset}
           onClick={() => setToggleOpen(false)}
           className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
@@ -50,9 +50,7 @@ const Nav = () => {
         <Link
           to="services"
           spy={true}
-          // smooth={true}
-          offset={-50}
-          // duration={300}
+          offset={offset}
           onClick={() => setToggleOpen(false)}
           className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
@@ -61,9 +59,7 @@ const Nav = () => {
         <Link
           to="resume"
           spy={true}
-          // smooth={true}
-          offset={-50}
-          // duration={300}
+          offset={offset}
           onClick={() => setToggleOpen(false)}
           className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
@@ -72,9 +68,7 @@ const Nav = () => {
         <Link
           to="portfolio"
           spy={true}
-          // smooth={true}
-          offset={-50}
-          // duration={300}
+          offset={offset}
           onClick={() => setToggleOpen(false)}
           className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
@@ -83,9 +77,7 @@ const Nav = () => {
         <Link
           to="testimonial"
           spy={true}
-          // smooth={true}
-          offset={-50}
-          // duration={300}
+          offset={offset}
           onClick={() => setToggleOpen(false)}
           className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >
@@ -94,9 +86,7 @@ const Nav = () => {
         <Link
           to="contact"
           spy={true}
-          // smooth={true}
-          offset={-50}
-          // duration={300}
+          offset={offset}
           onClick={() => setToggleOpen(false)}
           className="hover:text-brand-color cursor-pointer border-b border-transparent transition lg:border-none ease-linear"
         >

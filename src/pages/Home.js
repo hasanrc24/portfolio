@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
+import { useMediaQuery } from "react-responsive";
 import { Link } from "react-scroll";
 import About from "../components/About";
 import Contact from "../components/Contact";
@@ -27,10 +28,20 @@ const Home = () => {
     window.addEventListener("scroll", listenToScroll);
     return () => window.removeEventListener("scroll", listenToScroll);
   }, []);
+
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1024px)" });
+  const [offset, setOffset] = useState(-50);
+  useEffect(() => {
+    if (isBigScreen) {
+      setOffset(0);
+    } else {
+      setOffset(-50);
+    }
+  }, [isBigScreen]);
   return (
     <div className="lg:grid lg:grid-cols-5 items-start">
       <div className="sticky top-0 z-30">
-        <Nav />
+        <Nav offset={offset} />
       </div>
       <div className="lg:col-span-4 text-white text-center">
         <Hero />
@@ -42,8 +53,8 @@ const Home = () => {
         <Contact />
         {isVisible && (
           <span className="fixed cursor-pointer bottom-6 right-6 text-3xl md:text-4xl p-1 rounded-full bg-[rgba(0,0,0,.2)]">
-            <Link to="home" spy={true}>
-              <MdKeyboardArrowUp className="" />
+            <Link to="home" spy={true} offset={offset}>
+              <MdKeyboardArrowUp />
             </Link>
           </span>
         )}
