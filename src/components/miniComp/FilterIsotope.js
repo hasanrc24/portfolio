@@ -6,12 +6,9 @@ import { workData } from "../../data";
 
 const IsotopeReact = ({ setOpenModal }) => {
   const dispatch = useDispatch();
-  // init one ref to store the future isotope object
   const isotope = useRef();
-  // store the filter keyword in a state
   const [filterKey, setFilterKey] = useState("*");
 
-  // initialize an Isotope object with configs
   useEffect(() => {
     isotope.current = new Isotope(".filter-container", {
       itemSelector: ".filter-item",
