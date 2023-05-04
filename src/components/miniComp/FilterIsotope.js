@@ -73,6 +73,7 @@ const IsotopeReact = ({ setOpenModal }) => {
           TypeScript
         </span>
       </div>
+
       <div className="filter-container">
         <div
           onClick={() => {
@@ -164,7 +165,26 @@ const IsotopeReact = ({ setOpenModal }) => {
               alt="e-com"
             />
             <div className="absolute flex items-center justify-center flex-col top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gray-800 group-hover:opacity-80">
-              <h4 className="text-xl mb-2">Twee Sketch</h4>
+              <h4 className="text-xl mb-2">Fullstack Blog</h4>
+              <p>Next.js</p>
+            </div>
+          </div>
+        </div>
+        <div
+          onClick={() => {
+            setOpenModal(true);
+            dispatch(modalInfo(workData[5]));
+          }}
+          className="filter-item m-3 lg:m-4 rounded-lg w-80 h-48 md:w-[19rem] lg:w-72 md:h-[11rem] overflow-hidden next"
+        >
+          <div className="cursor-pointer group">
+            <img
+              className="transition-all duration-1000"
+              src="/portfolio/images/portfolio/full-blog-pic.png"
+              alt="full-blog"
+            />
+            <div className="absolute flex items-center justify-center flex-col top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-300 ease-in-out bg-gray-800 group-hover:opacity-80">
+              <h4 className="text-xl mb-2">Fullstack Blog</h4>
               <p>Next.js</p>
             </div>
           </div>

@@ -48,6 +48,16 @@ export const workData = [
     url: "https://twee-sketch.vercel.app/",
   },
   {
+    title: "Fullstack blog",
+    projectInfo:
+      "A MERN stack blog project with full interesting functionalities. User roles, post, edit, delete functionalities added",
+    technology:
+      "NextJS, Tailwind CSS, NodeJS, ExpressJS, MongoDB, Redux toolkit",
+    image: "/portfolio/images/portfolio/full-blog-pic.png",
+    category: "Blogging",
+    url: "https://full-blog-client.vercel.app/",
+  },
+  {
     title: "Snake Game",
     projectInfo:
       "A vanilla JavaScript project with the functionality of the traditional snake game.",
